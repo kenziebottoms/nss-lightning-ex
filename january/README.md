@@ -38,7 +38,7 @@ hitchhikers_guide = {
 
 #### January 2, 2018 (c)
 
-Transform the below array into `"Yoda says, "The greatest teacher, failure is"`.
+Transform the below array into `"Yoda says, "The greatest teacher, failure is."`.
 
 ```Javascript
 let yoda_quote = ["the", "greatest", "teacher", "failure", "is"];

@@ -19,4 +19,26 @@ formatted_quote.unshift("Yoda", "says");
 formatted_quote[1] += ",";
 formatted_quote[4] += ",";
 
-document.getElementById("result").innerHTML = formatted_quote.join(" ");
+document.getElementById("result").innerHTML = formatted_quote.join(" ") + "\n";
+
+// take 2 with map()
+let formatted_quote2 = yoda_quote.slice();
+// "Yoda says"
+formatted_quote2.unshift("Yoda", "says");
+
+// capitalization and commas
+formatted_quote2 = formatted_quote2.map(word => {
+    if (word == "the") {
+        return word[0].toUpperCase() + word.slice(1);
+    } else if (word == "teacher" || word == "says") {
+        return `${word},`;
+    } else {
+        return word;
+    }
+});
+
+// quotes
+formatted_quote2[formatted_quote2.length-1] += ".&rdquo;";
+formatted_quote2[2] = "&ldquo;" + formatted_quote2[2];
+
+document.getElementById("result").innerHTML += formatted_quote2.join(" ");

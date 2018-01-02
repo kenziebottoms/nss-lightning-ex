@@ -16,4 +16,4 @@
 let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
 ```
 
-Make an array called `fave_demo` that contains only ages 18 - 49.
+Write a `for` loop, `.forEach`, and `.filter` on this array to get an array called `fave_demo` that contains only ages 18 - 49.

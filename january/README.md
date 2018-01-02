@@ -10,10 +10,28 @@
 
 <a id="j2"></a>
 
-#### January 2, 2018
+#### January 2, 2018 (a)
+
+Write a `for` loop, `.forEach`, and `.filter` on this array to get an array called `fave_demo` that contains only ages 18 - 49.
 
 ```Javascript
 let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
 ```
 
-Write a `for` loop, `.forEach`, and `.filter` on this array to get an array called `fave_demo` that contains only ages 18 - 49.
+#### January 2, 2018 (b)
+
+Use dot notation and bracket notation to access the value of key `meaning_of_life`.
+
+```Javascript
+hitchhikers_guide = {
+    characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+    catchphrase: "Don't Panic",
+    random_facts: {
+        copies_sold: 14000000,
+        formats: ["radio", "TV", "film", "graphic novel"],
+        ultimate_answer: {
+            meaning_of_life: 42
+        }
+    }
+};
+```

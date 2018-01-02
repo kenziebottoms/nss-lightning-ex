@@ -22,3 +22,7 @@ let fave_demo3 = ages.filter(x => (18<=x && x<=49));
 console.log(fave_demo1);
 console.log(fave_demo2);
 console.log(fave_demo3);
+
+document.getElementById("result").innerHTML += fave_demo1.join(", ") + "\n";
+document.getElementById("result").innerHTML += fave_demo2.join(", ") + "\n";
+document.getElementById("result").innerHTML += fave_demo3.join(", ");

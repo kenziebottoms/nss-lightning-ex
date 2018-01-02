@@ -11,8 +11,9 @@ let hitchhikers_guide = {
 };
 
 // dot notation
-console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
+console.log();
+document.getElementById("result").innerHTML = hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life + "\t";
 
 // bracket notation
 let meaning = "meaning_of_life";
-console.log(hitchhikers_guide.random_facts.ultimate_answer[meaning]);
+document.getElementById("result").innerHTML += `${hitchhikers_guide.random_facts.ultimate_answer[meaning]}`;

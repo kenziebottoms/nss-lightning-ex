@@ -2,7 +2,7 @@
 
 |S|M|T|W|T|F|S|
 |-|-|-|-|-|-|-|
-||1|[2](#j2)|3|4|5|6|
+||1|[2](#j2)|[3](#j3)|4|5|6|
 |7|8|9|10|11|12|13|
 |14|15|16|17|18|19|20|
 |21|22|23|24|25|26|27|
@@ -42,4 +42,14 @@ Transform the below array into `"Yoda says, "The greatest teacher, failure is."`
 
 ```Javascript
 let yoda_quote = ["the", "greatest", "teacher", "failure", "is"];
+```
+
+<a id="j3"></a>
+
+#### January 3, 2018
+
+Choose a loop method of your choice to get `[3, 5, 7, 9, 11, 13]` from the following array:
+
+```Javascript
+let nums = [1, 2, 3, 4, "5", 6, "7"];
 ```

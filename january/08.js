@@ -33,21 +33,16 @@ let customers = {
             member_level: "none"
         }
     }
-}
-
-// ref: https://stackoverflow.com/questions/8312459/iterate-through-object-properties
+};
 
 // active, inactive
 for (let subset in customers) {
-    if (customers.hasOwnProperty(subset)) {
-        // name, age, member_level, etc.
-        for (let property in customers[subset]) {
-            if (customers[subset].hasOwnProperty(property)) {
-                let object = customers[subset][property];
-                object.id = property;
-            }
-        }
-    }
+    let keys = Object.keys(customers[subset]);
+    // name, age, member_level, etc.
+    keys.forEach(key => {
+        let object = customers[subset][key];
+        object.id = key;
+    })
 }
 
 document.getElementById("result").innerHTML = JSON.stringify(customers);

@@ -36,16 +36,17 @@ let customers = {
 }
 
 // ref: https://stackoverflow.com/questions/8312459/iterate-through-object-properties
-for (let property in customers.active) {
-    if (customers.active.hasOwnProperty(property)) {
-        let object = customers.active[property];
-        object.id = property;
-    }
-}
-for (let property in customers.inactive) {
-    if (customers.inactive.hasOwnProperty(property)) {
-        let object = customers.inactive[property];
-        object.id = property;
+
+// active, inactive
+for (let subset in customers) {
+    if (customers.hasOwnProperty(subset)) {
+        // name, age, member_level, etc.
+        for (let property in customers[subset]) {
+            if (customers[subset].hasOwnProperty(property)) {
+                let object = customers[subset][property];
+                object.id = property;
+            }
+        }
     }
 }
 
